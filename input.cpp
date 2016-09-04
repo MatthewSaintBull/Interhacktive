@@ -2,6 +2,7 @@
 #include <stdio.h>  
 #include <string>
 #include <algorithm>
+#include <vector>
 using namespace std; 
 
 int pos = 0;
@@ -10,14 +11,14 @@ void menu(int value){
     system("stty cooked");
     system("clear");
 
-    string list[3] = {"1) apri progetto", "2) mostra progetti", "3) esci dal software"};
+    vector<string> list = {"1) apri progetto", "2) mostra progetti", "3) esci dal software"};
         
     if (value == 0){
         list[0].insert(0,"> ");
     }
 
     else if (value == 's'){
-        if (pos == 2) pos = -1;
+        if (pos == list.size()-1) pos = -1;
         list[pos+1].insert(0,"> ");
         pos++;
     }
