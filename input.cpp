@@ -23,6 +23,11 @@ void menu(int value){
         pos++;
     }
 
+    else if (value == 'w'){
+        if (pos == 0) pos = list.size();
+        list[pos-1].insert(0,"> ");
+        pos--;
+    }
     for(int i = 0; i < 3; i++){
         cout << list[i] << endl;
     }
