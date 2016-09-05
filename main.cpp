@@ -1,6 +1,6 @@
 #include <iostream>
 #include "interhacktive.h"
-
+#include <string>
 int main(){
         Interhacktive Inter_menu;
         Inter_menu.addOption("1) Option 1");
