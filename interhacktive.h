@@ -1,9 +1,9 @@
-#include <iostream> 
-#include <string>
-#include <vector>
 
 #ifndef INTERHACKTIVE_H
 #define INTERHACKTIVE_H
+#include <iostream> 
+#include <string>
+#include <vector>
 
 using std::vector;
 using std::string;
