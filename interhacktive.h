@@ -33,7 +33,7 @@ class Interhacktive
         int selected = 0;
         char exitValue;
         bool exit_set = false;
-        vector<string> list = {};
+        vector<string> list ; //if you have any problem add the " = {} " 
 
 };
 
